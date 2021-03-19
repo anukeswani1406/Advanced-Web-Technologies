@@ -1,2 +1,2 @@
 # advanced-web-technologies
-BBA Semester 6 Practical Answers for Advanced Web Technologies
+BBA(CA) Semester 6 Practical Answers for Advanced Web Technologies
