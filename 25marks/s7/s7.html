@@ -1,0 +1,36 @@
+<!-- Slip no 7-4 -->
+<!-- Create employee table as follows -->
+<!-- Bus(bno, bname, source, designation ). -->
+<!-- Write Ajax program to select the bus name and print the selected bus details. -->
+
+<html>
+	<head>
+		<script type="text/javascript">
+			 function get_emp(ename)
+			{          
+			            var ob=false;
+			            ob=new XMLHttpRequest();
+	
+			            ob.onreadystatechange=function()
+			            {
+			                        if(ob.readyState==4 && ob.status==200)
+				                        document.getElementById("place").innerHTML=ob.responseText;           
+			            }
+			            ob.open("GET","s7.php?ename="+ename,true);
+			            ob.send();
+			}
+		</script>
+	</head>
+
+	<body>
+		Select Name Of Employee :
+		<select name="ename" onchange="get_emp(this.value)">
+		      <option value="">select emp</option>
+		      <option value="Nikita">Nikita</option>
+		      <option value="Shehal">Shehal</option>
+		      <option value="Faizal">Faizal</option>
+		</select>
+
+		<div id="place"></div>
+	</body>
+</html>

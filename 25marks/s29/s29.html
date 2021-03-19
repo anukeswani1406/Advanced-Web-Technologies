@@ -1,0 +1,23 @@
+<!-- Slip no 29 -->
+<!-- Write a PHP script using AJAX concept, to check user name and password are valid or Invalid (use database to store user name and password). -->
+
+<html>
+	<head>
+		<script type="text/javascript">
+	
+		function validate()
+		{
+		            uname=document.getElementById('uname').value;
+		            pwd=document.getElementById('pwd').value;
+		}
+		</script>
+	</head>
+
+	<body>
+		<form action="s29.php" method=get>
+			Enter UserName<input type=text name=uname id=uname><span id=a></span><br>
+			Enter Password<input type=password name=pwd id=pwd><br>
+			<input type=SUBMIT value=SUBMIT onClick=validate()>
+		</form>
+	</body>
+</html>

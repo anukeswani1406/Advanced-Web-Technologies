@@ -1,0 +1,51 @@
+<!-- Slip no 20-4 -->
+
+<!-- Consider the following entities and their relationships -->
+<!--         Emp (emp_no,emp_name,address,phone,salary) -->
+<!--         Dept (dept_no,dept_name,location) -->
+<!-- Emp-Dept are related with one-many relationship -->
+<!-- Create a RDB in 3NF for the above and solve following -->
+<!-- Using above database write a PHP script which will  -->
+<!-- a)	Insert employee records in table . -->
+<!-- b)	Print a salary statement in the format given below, for a given department. (Accept department name from the user). -->
+
+
+
+<html>
+	<body>
+		<form action="s20.php" method="get">
+	
+		<center>   <h2>Fill Employee Details : </h2>
+		<table>
+			<tr>  <td>Enter Employee No :</td>        
+				<td><input type=text name=e_no></td>           </tr>
+
+			<tr>  <td>Enter Employee Name :</td>    
+				<td><input type=text name=e_nm></td>     </tr>
+
+			<tr>  <td>Enter Address :</td>                  
+				<td><input type=text name=add></td>       </tr>
+
+			<tr>  <td>Enter Phone :</td>                     
+				<td><input type=text name=ph></td>         </tr>
+			
+			<tr>  <td>Enter Salary :</td>                     
+				<td><input type=text name=sal></td>        </tr>
+			
+			<tr>  <td>Enter Department no :</td>       
+				<td><input type=text name=d_no></td>     </tr>
+
+			<tr>  <td>Enter Department name :</td>  
+				<td><input type=text name=d_nm></td>    </tr>
+
+			<tr>  <td>Enter Location :</td>                  
+				<td><input type=text name=loc></td>        </tr>
+
+			<tr>  <td></td>                                           
+				<td><input type=submit value=OK></td>   </tr>
+		</table>
+		</center>
+
+		</form>
+	</body>
+</html>

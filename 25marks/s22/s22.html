@@ -1,0 +1,33 @@
+<!-- Slip no 22-4 -->
+
+<!-- Consider the following entities and their relationships -->
+<!--      Movie (movie_no, movie_name, release_year) -->
+<!--      Actor (actor_no, name) -->
+<!-- Relationship between movie and actor is many – many with attribute rate in Rs. Create a RDB in 3 NF for the above and solve following Using above database, write PHP scripts for the following: -->
+<!-- (Hint: Create HTML form having two radio buttons) -->
+<!-- a)	Accept actor name and display the names of the movies in which he has acted. -->
+<!-- b)  Insert new movie information. -->
+
+
+<html>
+	<body>
+		<form action="s22.php" method="get">
+			<h3>Enter Actor Name : <input type=text name=nm>            </h3>
+
+			<input type=radio name=a value=1>Display Movie Name<br><br>
+
+			<h3>Enter movie no :<input type=text name=m_no> </h3>
+			<h3>Enter movie name :<input type=text name=m_nm></h3>       
+			<h3>Enter release year :<input type=text name=r_yr>           </h3>
+			<h3>Enter actor no :<input type=text name=a_no>   </h3>
+
+			<h3>Enter actor name :<input type=text name=a_nm>     </h3>
+
+			<input type=radio name=a value=2>Insert New movie info<br><br>
+	
+			<input type=submit value=OK>
+		</form>
+	
+		<div id="place"></div>
+	</body>
+</html>
