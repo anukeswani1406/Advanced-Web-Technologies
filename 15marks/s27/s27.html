@@ -1,0 +1,30 @@
+<!-- Slip no 27-3 -->
+<!-- Write an Ajax program to display list of games stored in an array on clicking OK button. -->
+
+<html>
+	<head>
+	<script >
+		  function dis()
+		  {
+			var ob=false;
+			ob=new XMLHttpRequest();
+			var gm=document.getElementById("gm").value;
+			ob.open("GET","s27.php?game="+gm);
+			ob.send();       
+ 
+ 		             ob.onreadystatechange=function()
+		              {           
+			if(ob.readyState==4 && ob.status==200)
+		                  {
+                                    		document.getElementById("game").innerHTML=ob.responseText;
+                          		}
+		              }          
+  		}
+	</script>
+	</head>
+
+	<body>
+		<h2>Display the list of Games<input type=button name=submit value=OK id="gm" onClick="dis()"></h2>
+		<span id="game"></span>
+	</body>
+</html>

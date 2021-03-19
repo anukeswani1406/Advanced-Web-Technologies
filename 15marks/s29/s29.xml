@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<Course>
+	<ComputerScience>
+		<Studentname>resh</Studentname>
+		<Classname>ty</Classname>
+		<percentage>60</percentage>
+	</ComputerScience>
+
+	<ComputerScience>
+		<Studentname>tej</Studentname>
+		<Classname>ty</Classname>
+		<percentage>55</percentage>
+	</ComputerScience>
+
+	<ComputerScience>
+		<Studentname>praj</Studentname>
+		<Classname>sy</Classname>
+		<percentage>55</percentage>
+	</ComputerScience>
+
+	<ComputerScience>
+		<Studentname>pooja</Studentname>
+		<Classname>fy</Classname>
+		<percentage>78</percentage>
+	</ComputerScience>
+
+	<ComputerScience>
+		<Studentname>sweety</Studentname>
+		<Classname>LKG</Classname>
+		<percentage>50</percentage>
+	</ComputerScience>
+
+	<ComputerScience>
+		<Studentname>akshada</Studentname>
+		<Classname>fy</Classname>
+		<percentage>79</percentage>
+	</ComputerScience>
+</Course>

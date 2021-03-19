@@ -1,0 +1,32 @@
+<!-- Slip no 13-3 -->
+<!-- Write a PHP script using AJAX concept, to develop user-friendly and interactive search engine(like a google search engine) -->
+
+<html>
+	<head>
+		<title>Slip13.html</title>
+		<script>
+		function search()
+		{		
+		 	srch=document.getElementById('txtsrch').value;
+			ob=new XMLHttpRequest();
+			ob.onreadystatechange=function()
+			{
+			              if(ob.readyState==4 && ob.status==200)
+			              {
+			                          document.getElementById('o').innerHTML=ob.responseText;                    
+			              }          
+			  }
+			ob.open("GET","s13.php?s="+srch);
+			ob.send();
+             		}
+		</script>
+	</head>
+
+	<body>
+		<table align=center border=0>
+			<tr><td><input type=text id=txtsrch placeholder="enter search string"><input type=button value="SEARCH" onclick="search()">
+		</table>
+	
+		<span id=o></span>
+	</body>
+</html>
